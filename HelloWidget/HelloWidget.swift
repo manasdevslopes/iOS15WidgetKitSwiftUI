@@ -8,7 +8,7 @@
 import WidgetKit
 import SwiftUI
 
-@main
+
 struct HelloWidget: Widget {
   // Kind - Unique name for the widget
   let kind: String = "HelloWidget"
@@ -19,5 +19,6 @@ struct HelloWidget: Widget {
       // View
       HelloWidgetView()
     }
+    .supportedFamilies([.systemSmall])
   }
 }
