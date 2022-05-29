@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD2813172843536C000B0FDE /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD281312284352A2000B0FDE /* Quote.swift */; };
+		FD28131828435371000B0FDE /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD28131528435361000B0FDE /* QuoteService.swift */; };
+		FD281319284356B2000B0FDE /* QuotesWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD28130F2843524C000B0FDE /* QuotesWidgetEntry.swift */; };
+		FD28131B2843573A000B0FDE /* QuotesWidgetTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD28131A2843573A000B0FDE /* QuotesWidgetTimelineProvider.swift */; };
+		FD28131D28435A5F000B0FDE /* QuoteWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD28131C28435A5F000B0FDE /* QuoteWidgetView.swift */; };
+		FD28131F28435B1A000B0FDE /* QuoteWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD28131E28435B1A000B0FDE /* QuoteWidget.swift */; };
 		FD3E9756283D0E410071FC05 /* iOS15WidgetKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E9755283D0E410071FC05 /* iOS15WidgetKitApp.swift */; };
 		FD3E9758283D0E410071FC05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E9757283D0E410071FC05 /* ContentView.swift */; };
 		FD3E975A283D0E440071FC05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3E9759283D0E440071FC05 /* Assets.xcassets */; };
@@ -51,6 +57,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FD28130F2843524C000B0FDE /* QuotesWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesWidgetEntry.swift; sourceTree = "<group>"; };
+		FD281312284352A2000B0FDE /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		FD28131528435361000B0FDE /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		FD28131A2843573A000B0FDE /* QuotesWidgetTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesWidgetTimelineProvider.swift; sourceTree = "<group>"; };
+		FD28131C28435A5F000B0FDE /* QuoteWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteWidgetView.swift; sourceTree = "<group>"; };
+		FD28131E28435B1A000B0FDE /* QuoteWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteWidget.swift; sourceTree = "<group>"; };
 		FD3E9752283D0E410071FC05 /* iOS15WidgetKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS15WidgetKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3E9755283D0E410071FC05 /* iOS15WidgetKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS15WidgetKitApp.swift; sourceTree = "<group>"; };
 		FD3E9757283D0E410071FC05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +104,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD28130E28435222000B0FDE /* QuotesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FD28131428435355000B0FDE /* QuoteService */,
+				FD28131128435297000B0FDE /* Model */,
+				FD28130F2843524C000B0FDE /* QuotesWidgetEntry.swift */,
+				FD28131A2843573A000B0FDE /* QuotesWidgetTimelineProvider.swift */,
+				FD28131C28435A5F000B0FDE /* QuoteWidgetView.swift */,
+				FD28131E28435B1A000B0FDE /* QuoteWidget.swift */,
+			);
+			path = QuotesWidget;
+			sourceTree = "<group>";
+		};
+		FD28131128435297000B0FDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD281312284352A2000B0FDE /* Quote.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD28131428435355000B0FDE /* QuoteService */ = {
+			isa = PBXGroup;
+			children = (
+				FD28131528435361000B0FDE /* QuoteService.swift */,
+			);
+			path = QuoteService;
+			sourceTree = "<group>";
+		};
 		FD3E9749283D0E410071FC05 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +140,7 @@
 				FD6358ED2840FE12006E3795 /* WidgetGroup */,
 				FDE5EF5B283E60390014A6BA /* HelloWidget */,
 				FD6358E32840F1D7006E3795 /* DateTimeWidget */,
+				FD28130E28435222000B0FDE /* QuotesWidget */,
 				FDE5EF56283E60390014A6BA /* Frameworks */,
 				FD3E9753283D0E410071FC05 /* Products */,
 			);
@@ -284,13 +326,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD6358EC2840FBF8006E3795 /* DateTimeWidget.swift in Sources */,
+				FD28131B2843573A000B0FDE /* QuotesWidgetTimelineProvider.swift in Sources */,
+				FD281319284356B2000B0FDE /* QuotesWidgetEntry.swift in Sources */,
 				FDE5EF6B283E66500014A6BA /* HelloWidgetTimelineProvider.swift in Sources */,
 				FD6358E82840F330006E3795 /* DateTimeEntry.swift in Sources */,
+				FD28131D28435A5F000B0FDE /* QuoteWidgetView.swift in Sources */,
 				FDE5EF5D283E60390014A6BA /* HelloWidget.swift in Sources */,
+				FD28131828435371000B0FDE /* QuoteService.swift in Sources */,
 				FD6358EF2840FE3F006E3795 /* MyWidgetsBundle.swift in Sources */,
 				FD6358E72840F32A006E3795 /* DateTimeTimelineProvider.swift in Sources */,
+				FD28131F28435B1A000B0FDE /* QuoteWidget.swift in Sources */,
 				FDE5EF69283E629C0014A6BA /* HelloWidgetEntry.swift in Sources */,
 				FDE5EF6D283E6F990014A6BA /* HelloWidgetView.swift in Sources */,
+				FD2813172843536C000B0FDE /* Quote.swift in Sources */,
 				FD6358EA2840F7C2006E3795 /* DateTimeEntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

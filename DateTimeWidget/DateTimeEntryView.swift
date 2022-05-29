@@ -21,9 +21,11 @@ struct DateTimeEntryView: View {
             .background(Rectangle().fill(Color.red))
           
           Text(getDay())
+            .foregroundColor(.black)
           
           Text(getDate())
             .font(.largeTitle)
+            .foregroundColor(.black)
           
           Text(getTime())
             .font(.caption)

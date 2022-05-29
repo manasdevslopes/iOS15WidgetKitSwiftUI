@@ -13,6 +13,7 @@ struct MyWidgetsBundle: WidgetBundle {
   var body: some Widget{
     HelloWidget()
     DateTimeWidget()
+    QuoteWidget()
   }
 }
 
