@@ -14,6 +14,7 @@ struct MyWidgetsBundle: WidgetBundle {
     HelloWidget()
     DateTimeWidget()
     QuoteWidget()
+    WeatherWidget()
   }
 }
 

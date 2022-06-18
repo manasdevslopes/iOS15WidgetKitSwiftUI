@@ -13,6 +13,14 @@
 		FD28131B2843573A000B0FDE /* QuotesWidgetTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD28131A2843573A000B0FDE /* QuotesWidgetTimelineProvider.swift */; };
 		FD28131D28435A5F000B0FDE /* QuoteWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD28131C28435A5F000B0FDE /* QuoteWidgetView.swift */; };
 		FD28131F28435B1A000B0FDE /* QuoteWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD28131E28435B1A000B0FDE /* QuoteWidget.swift */; };
+		FD310A52285DF06E00E1BC6E /* WeatherUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD310A42285DDC6600E1BC6E /* WeatherUtils.swift */; };
+		FD310A53285DF07200E1BC6E /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD310A44285DE22000E1BC6E /* Date+Extensions.swift */; };
+		FD310A54285DF07500E1BC6E /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD310A46285DE34300E1BC6E /* Weather.swift */; };
+		FD310A55285DF07900E1BC6E /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD310A48285DE40000E1BC6E /* WeatherService.swift */; };
+		FD310A56285DF07D00E1BC6E /* WeatherEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD310A4A285DE5F200E1BC6E /* WeatherEntry.swift */; };
+		FD310A57285DF08100E1BC6E /* WeatherTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD310A4C285DE63800E1BC6E /* WeatherTimelineProvider.swift */; };
+		FD310A58285DF08500E1BC6E /* WeatherWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD310A4E285DE9A200E1BC6E /* WeatherWidgetView.swift */; };
+		FD310A59285DF08800E1BC6E /* WeatherWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD310A50285DEE0E00E1BC6E /* WeatherWidget.swift */; };
 		FD3E9756283D0E410071FC05 /* iOS15WidgetKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E9755283D0E410071FC05 /* iOS15WidgetKitApp.swift */; };
 		FD3E9758283D0E410071FC05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E9757283D0E410071FC05 /* ContentView.swift */; };
 		FD3E975A283D0E440071FC05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3E9759283D0E440071FC05 /* Assets.xcassets */; };
@@ -63,6 +71,14 @@
 		FD28131A2843573A000B0FDE /* QuotesWidgetTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesWidgetTimelineProvider.swift; sourceTree = "<group>"; };
 		FD28131C28435A5F000B0FDE /* QuoteWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteWidgetView.swift; sourceTree = "<group>"; };
 		FD28131E28435B1A000B0FDE /* QuoteWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteWidget.swift; sourceTree = "<group>"; };
+		FD310A42285DDC6600E1BC6E /* WeatherUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUtils.swift; sourceTree = "<group>"; };
+		FD310A44285DE22000E1BC6E /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		FD310A46285DE34300E1BC6E /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		FD310A48285DE40000E1BC6E /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		FD310A4A285DE5F200E1BC6E /* WeatherEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntry.swift; sourceTree = "<group>"; };
+		FD310A4C285DE63800E1BC6E /* WeatherTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTimelineProvider.swift; sourceTree = "<group>"; };
+		FD310A4E285DE9A200E1BC6E /* WeatherWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidgetView.swift; sourceTree = "<group>"; };
+		FD310A50285DEE0E00E1BC6E /* WeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidget.swift; sourceTree = "<group>"; };
 		FD3E9752283D0E410071FC05 /* iOS15WidgetKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS15WidgetKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3E9755283D0E410071FC05 /* iOS15WidgetKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS15WidgetKitApp.swift; sourceTree = "<group>"; };
 		FD3E9757283D0E410071FC05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,6 +149,53 @@
 			path = QuoteService;
 			sourceTree = "<group>";
 		};
+		FD310A3D285DDB6800E1BC6E /* WeatherWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FD310A3E285DDC1400E1BC6E /* Utils */,
+				FD310A3F285DDC1D00E1BC6E /* Models */,
+				FD310A40285DDC2800E1BC6E /* Service */,
+				FD310A41285DDC3200E1BC6E /* Widget */,
+			);
+			path = WeatherWidget;
+			sourceTree = "<group>";
+		};
+		FD310A3E285DDC1400E1BC6E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FD310A42285DDC6600E1BC6E /* WeatherUtils.swift */,
+				FD310A44285DE22000E1BC6E /* Date+Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FD310A3F285DDC1D00E1BC6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD310A46285DE34300E1BC6E /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD310A40285DDC2800E1BC6E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FD310A48285DE40000E1BC6E /* WeatherService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FD310A41285DDC3200E1BC6E /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				FD310A4A285DE5F200E1BC6E /* WeatherEntry.swift */,
+				FD310A4C285DE63800E1BC6E /* WeatherTimelineProvider.swift */,
+				FD310A4E285DE9A200E1BC6E /* WeatherWidgetView.swift */,
+				FD310A50285DEE0E00E1BC6E /* WeatherWidget.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
 		FD3E9749283D0E410071FC05 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +204,7 @@
 				FDE5EF5B283E60390014A6BA /* HelloWidget */,
 				FD6358E32840F1D7006E3795 /* DateTimeWidget */,
 				FD28130E28435222000B0FDE /* QuotesWidget */,
+				FD310A3D285DDB6800E1BC6E /* WeatherWidget */,
 				FDE5EF56283E60390014A6BA /* Frameworks */,
 				FD3E9753283D0E410071FC05 /* Products */,
 			);
@@ -329,17 +393,25 @@
 				FD28131B2843573A000B0FDE /* QuotesWidgetTimelineProvider.swift in Sources */,
 				FD281319284356B2000B0FDE /* QuotesWidgetEntry.swift in Sources */,
 				FDE5EF6B283E66500014A6BA /* HelloWidgetTimelineProvider.swift in Sources */,
+				FD310A54285DF07500E1BC6E /* Weather.swift in Sources */,
+				FD310A57285DF08100E1BC6E /* WeatherTimelineProvider.swift in Sources */,
 				FD6358E82840F330006E3795 /* DateTimeEntry.swift in Sources */,
 				FD28131D28435A5F000B0FDE /* QuoteWidgetView.swift in Sources */,
 				FDE5EF5D283E60390014A6BA /* HelloWidget.swift in Sources */,
 				FD28131828435371000B0FDE /* QuoteService.swift in Sources */,
+				FD310A53285DF07200E1BC6E /* Date+Extensions.swift in Sources */,
 				FD6358EF2840FE3F006E3795 /* MyWidgetsBundle.swift in Sources */,
+				FD310A55285DF07900E1BC6E /* WeatherService.swift in Sources */,
+				FD310A59285DF08800E1BC6E /* WeatherWidget.swift in Sources */,
 				FD6358E72840F32A006E3795 /* DateTimeTimelineProvider.swift in Sources */,
 				FD28131F28435B1A000B0FDE /* QuoteWidget.swift in Sources */,
 				FDE5EF69283E629C0014A6BA /* HelloWidgetEntry.swift in Sources */,
 				FDE5EF6D283E6F990014A6BA /* HelloWidgetView.swift in Sources */,
 				FD2813172843536C000B0FDE /* Quote.swift in Sources */,
+				FD310A52285DF06E00E1BC6E /* WeatherUtils.swift in Sources */,
 				FD6358EA2840F7C2006E3795 /* DateTimeEntryView.swift in Sources */,
+				FD310A56285DF07D00E1BC6E /* WeatherEntry.swift in Sources */,
+				FD310A58285DF08500E1BC6E /* WeatherWidgetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
