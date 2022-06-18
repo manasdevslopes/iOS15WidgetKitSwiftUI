@@ -15,7 +15,13 @@ struct QuoteWidgetView: View {
         Text(entry.quote.quoteText)
         HStack {
           Spacer()
-          Text("- \(entry.quote.quoteAuthor)")
+          
+          if entry.quote.quoteAuthor != "" {
+            Text("- \(entry.quote.quoteAuthor)")
+          } else {
+            Text("- unknown")
+          }
+          
         }
         .font(.caption)
         .foregroundColor(.secondary)

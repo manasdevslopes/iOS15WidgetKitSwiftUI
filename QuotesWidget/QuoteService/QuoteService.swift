@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct QuoteService {
+class QuoteService {
   func getRandomQuote(completion: @escaping (Quote) -> ()) {
     let url = "https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en"
     let session = URLSession(configuration: .default)

@@ -10,7 +10,7 @@ import WidgetKit
 struct QuotesWidgetTimelineProvider: TimelineProvider {
   typealias Entry = QuotesWidgetEntry
   
-  var loader = QuoteService()
+  var networkManager = QuoteService()
   let placeholderQuote = Quote(quoteText: "Nothing in life is to be feared. It is only to be understood.", quoteAuthor: "Marie Curie")
   
   func placeholder(in context: Context) -> QuotesWidgetEntry {
@@ -22,12 +22,12 @@ struct QuotesWidgetTimelineProvider: TimelineProvider {
   }
   
   func getTimeline(in context: Context, completion: @escaping (Timeline<QuotesWidgetEntry>) -> Void) {
-    loader.getRandomQuote { result in
+    networkManager.getRandomQuote { result in
       
       let date = Date()
       let entry = QuotesWidgetEntry(date: date, quote: result)
       
-      let nextUpdate = Calendar.current.date(byAdding: .minute, value: 1, to: date)
+      let nextUpdate = Calendar.current.date(byAdding: .minute, value: 2, to: date)
       
       let timeline = Timeline(entries: [entry], policy: .after(nextUpdate!))
       completion(timeline)
