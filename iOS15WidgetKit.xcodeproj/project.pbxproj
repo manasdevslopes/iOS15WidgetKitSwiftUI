@@ -13,6 +13,13 @@
 		FD28131B2843573A000B0FDE /* QuotesWidgetTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD28131A2843573A000B0FDE /* QuotesWidgetTimelineProvider.swift */; };
 		FD28131D28435A5F000B0FDE /* QuoteWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD28131C28435A5F000B0FDE /* QuoteWidgetView.swift */; };
 		FD28131F28435B1A000B0FDE /* QuoteWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD28131E28435B1A000B0FDE /* QuoteWidget.swift */; };
+		FD2C1DDC2860ACD2004E2E48 /* Rain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2C1DDB2860ACD2004E2E48 /* Rain.swift */; };
+		FD2C1DDE2860ADA6004E2E48 /* RainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2C1DDD2860ADA6004E2E48 /* RainView.swift */; };
+		FD2C1DDF2860B170004E2E48 /* RainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2C1DDD2860ADA6004E2E48 /* RainView.swift */; };
+		FD2C1DE02860B174004E2E48 /* Rain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2C1DDB2860ACD2004E2E48 /* Rain.swift */; };
+		FD2C1DE22860B1AC004E2E48 /* RainEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2C1DE12860B1AC004E2E48 /* RainEntry.swift */; };
+		FD2C1DE42860B1DE004E2E48 /* RainTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2C1DE32860B1DE004E2E48 /* RainTimelineProvider.swift */; };
+		FD2C1DE62860B319004E2E48 /* RainWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2C1DE52860B319004E2E48 /* RainWidget.swift */; };
 		FD310A52285DF06E00E1BC6E /* WeatherUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD310A42285DDC6600E1BC6E /* WeatherUtils.swift */; };
 		FD310A53285DF07200E1BC6E /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD310A44285DE22000E1BC6E /* Date+Extensions.swift */; };
 		FD310A54285DF07500E1BC6E /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD310A46285DE34300E1BC6E /* Weather.swift */; };
@@ -71,6 +78,11 @@
 		FD28131A2843573A000B0FDE /* QuotesWidgetTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesWidgetTimelineProvider.swift; sourceTree = "<group>"; };
 		FD28131C28435A5F000B0FDE /* QuoteWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteWidgetView.swift; sourceTree = "<group>"; };
 		FD28131E28435B1A000B0FDE /* QuoteWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteWidget.swift; sourceTree = "<group>"; };
+		FD2C1DDB2860ACD2004E2E48 /* Rain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rain.swift; sourceTree = "<group>"; };
+		FD2C1DDD2860ADA6004E2E48 /* RainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainView.swift; sourceTree = "<group>"; };
+		FD2C1DE12860B1AC004E2E48 /* RainEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainEntry.swift; sourceTree = "<group>"; };
+		FD2C1DE32860B1DE004E2E48 /* RainTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainTimelineProvider.swift; sourceTree = "<group>"; };
+		FD2C1DE52860B319004E2E48 /* RainWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainWidget.swift; sourceTree = "<group>"; };
 		FD310A42285DDC6600E1BC6E /* WeatherUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUtils.swift; sourceTree = "<group>"; };
 		FD310A44285DE22000E1BC6E /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		FD310A46285DE34300E1BC6E /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
@@ -149,6 +161,41 @@
 			path = QuoteService;
 			sourceTree = "<group>";
 		};
+		FD2C1DD72860AC97004E2E48 /* RainExample */ = {
+			isa = PBXGroup;
+			children = (
+				FD2C1DDA2860ACC6004E2E48 /* View */,
+				FD2C1DD92860ACC1004E2E48 /* Models */,
+			);
+			path = RainExample;
+			sourceTree = "<group>";
+		};
+		FD2C1DD82860ACA2004E2E48 /* RainWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FD2C1DE12860B1AC004E2E48 /* RainEntry.swift */,
+				FD2C1DE32860B1DE004E2E48 /* RainTimelineProvider.swift */,
+				FD2C1DE52860B319004E2E48 /* RainWidget.swift */,
+			);
+			path = RainWidget;
+			sourceTree = "<group>";
+		};
+		FD2C1DD92860ACC1004E2E48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD2C1DDB2860ACD2004E2E48 /* Rain.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD2C1DDA2860ACC6004E2E48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD2C1DDD2860ADA6004E2E48 /* RainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FD310A3D285DDB6800E1BC6E /* WeatherWidget */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +252,7 @@
 				FD6358E32840F1D7006E3795 /* DateTimeWidget */,
 				FD28130E28435222000B0FDE /* QuotesWidget */,
 				FD310A3D285DDB6800E1BC6E /* WeatherWidget */,
+				FD2C1DD82860ACA2004E2E48 /* RainWidget */,
 				FDE5EF56283E60390014A6BA /* Frameworks */,
 				FD3E9753283D0E410071FC05 /* Products */,
 			);
@@ -222,6 +270,7 @@
 		FD3E9754283D0E410071FC05 /* iOS15WidgetKit */ = {
 			isa = PBXGroup;
 			children = (
+				FD2C1DD72860AC97004E2E48 /* RainExample */,
 				FD3E9755283D0E410071FC05 /* iOS15WidgetKitApp.swift */,
 				FD3E9757283D0E410071FC05 /* ContentView.swift */,
 				FD3E9759283D0E440071FC05 /* Assets.xcassets */,
@@ -380,7 +429,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD2C1DDC2860ACD2004E2E48 /* Rain.swift in Sources */,
 				FD3E9758283D0E410071FC05 /* ContentView.swift in Sources */,
+				FD2C1DDE2860ADA6004E2E48 /* RainView.swift in Sources */,
 				FD3E9756283D0E410071FC05 /* iOS15WidgetKitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,16 +442,21 @@
 			files = (
 				FD6358EC2840FBF8006E3795 /* DateTimeWidget.swift in Sources */,
 				FD28131B2843573A000B0FDE /* QuotesWidgetTimelineProvider.swift in Sources */,
+				FD2C1DE22860B1AC004E2E48 /* RainEntry.swift in Sources */,
 				FD281319284356B2000B0FDE /* QuotesWidgetEntry.swift in Sources */,
 				FDE5EF6B283E66500014A6BA /* HelloWidgetTimelineProvider.swift in Sources */,
 				FD310A54285DF07500E1BC6E /* Weather.swift in Sources */,
 				FD310A57285DF08100E1BC6E /* WeatherTimelineProvider.swift in Sources */,
+				FD2C1DDF2860B170004E2E48 /* RainView.swift in Sources */,
 				FD6358E82840F330006E3795 /* DateTimeEntry.swift in Sources */,
+				FD2C1DE62860B319004E2E48 /* RainWidget.swift in Sources */,
 				FD28131D28435A5F000B0FDE /* QuoteWidgetView.swift in Sources */,
 				FDE5EF5D283E60390014A6BA /* HelloWidget.swift in Sources */,
+				FD2C1DE42860B1DE004E2E48 /* RainTimelineProvider.swift in Sources */,
 				FD28131828435371000B0FDE /* QuoteService.swift in Sources */,
 				FD310A53285DF07200E1BC6E /* Date+Extensions.swift in Sources */,
 				FD6358EF2840FE3F006E3795 /* MyWidgetsBundle.swift in Sources */,
+				FD2C1DE02860B174004E2E48 /* Rain.swift in Sources */,
 				FD310A55285DF07900E1BC6E /* WeatherService.swift in Sources */,
 				FD310A59285DF08800E1BC6E /* WeatherWidget.swift in Sources */,
 				FD6358E72840F32A006E3795 /* DateTimeTimelineProvider.swift in Sources */,

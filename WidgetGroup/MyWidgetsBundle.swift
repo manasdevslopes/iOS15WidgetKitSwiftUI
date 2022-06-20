@@ -15,6 +15,12 @@ struct MyWidgetsBundle: WidgetBundle {
     DateTimeWidget()
     QuoteWidget()
     WeatherWidget()
+    MySubWidgetBundle().body
   }
 }
 
+struct MySubWidgetBundle: WidgetBundle {
+  var body: some Widget{
+    RainWidget()
+  }
+}
