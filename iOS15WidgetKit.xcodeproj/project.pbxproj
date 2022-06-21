@@ -32,6 +32,12 @@
 		FD3E9758283D0E410071FC05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E9757283D0E410071FC05 /* ContentView.swift */; };
 		FD3E975A283D0E440071FC05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3E9759283D0E440071FC05 /* Assets.xcassets */; };
 		FD3E975D283D0E440071FC05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3E975C283D0E440071FC05 /* Preview Assets.xcassets */; };
+		FD6219F32861FF9C00E32026 /* ReminderEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6219F22861FF9C00E32026 /* ReminderEntry.swift */; };
+		FD6219F52861FFFA00E32026 /* ReminderTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6219F42861FFFA00E32026 /* ReminderTimelineProvider.swift */; };
+		FD6219F7286200D100E32026 /* ReminderWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6219F6286200D100E32026 /* ReminderWidgetView.swift */; };
+		FD6219F92862016600E32026 /* ReminderWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6219F82862016600E32026 /* ReminderWidget.swift */; };
+		FD6219FB2862022F00E32026 /* AppContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6219FA2862022F00E32026 /* AppContants.swift */; };
+		FD6219FC2862022F00E32026 /* AppContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6219FA2862022F00E32026 /* AppContants.swift */; };
 		FD6358E72840F32A006E3795 /* DateTimeTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6358E62840F32A006E3795 /* DateTimeTimelineProvider.swift */; };
 		FD6358E82840F330006E3795 /* DateTimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6358E42840F22A006E3795 /* DateTimeEntry.swift */; };
 		FD6358EA2840F7C2006E3795 /* DateTimeEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6358E92840F7C2006E3795 /* DateTimeEntryView.swift */; };
@@ -45,6 +51,8 @@
 		FDE5EF69283E629C0014A6BA /* HelloWidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE5EF68283E629C0014A6BA /* HelloWidgetEntry.swift */; };
 		FDE5EF6B283E66500014A6BA /* HelloWidgetTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE5EF6A283E66500014A6BA /* HelloWidgetTimelineProvider.swift */; };
 		FDE5EF6D283E6F990014A6BA /* HelloWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE5EF6C283E6F990014A6BA /* HelloWidgetView.swift */; };
+		FDE937A02861FC03000CF588 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE9379F2861FC03000CF588 /* Reminder.swift */; };
+		FDE937A22861FC59000CF588 /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE937A12861FC59000CF588 /* ReminderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +104,11 @@
 		FD3E9757283D0E410071FC05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD3E9759283D0E440071FC05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD3E975C283D0E440071FC05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD6219F22861FF9C00E32026 /* ReminderEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderEntry.swift; sourceTree = "<group>"; };
+		FD6219F42861FFFA00E32026 /* ReminderTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTimelineProvider.swift; sourceTree = "<group>"; };
+		FD6219F6286200D100E32026 /* ReminderWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderWidgetView.swift; sourceTree = "<group>"; };
+		FD6219F82862016600E32026 /* ReminderWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderWidget.swift; sourceTree = "<group>"; };
+		FD6219FA2862022F00E32026 /* AppContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContants.swift; sourceTree = "<group>"; };
 		FD6358E42840F22A006E3795 /* DateTimeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeEntry.swift; sourceTree = "<group>"; };
 		FD6358E62840F32A006E3795 /* DateTimeTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DateTimeTimelineProvider.swift; path = ../../DateTimeTimelineProvider.swift; sourceTree = "<group>"; };
 		FD6358E92840F7C2006E3795 /* DateTimeEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeEntryView.swift; sourceTree = "<group>"; };
@@ -110,6 +123,10 @@
 		FDE5EF68283E629C0014A6BA /* HelloWidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWidgetEntry.swift; sourceTree = "<group>"; };
 		FDE5EF6A283E66500014A6BA /* HelloWidgetTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWidgetTimelineProvider.swift; sourceTree = "<group>"; };
 		FDE5EF6C283E6F990014A6BA /* HelloWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWidgetView.swift; sourceTree = "<group>"; };
+		FDE9379A2861F9C8000CF588 /* iOS15WidgetKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS15WidgetKit.entitlements; sourceTree = "<group>"; };
+		FDE9379B2861FAFB000CF588 /* HelloWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelloWidgetExtension.entitlements; sourceTree = "<group>"; };
+		FDE9379F2861FC03000CF588 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		FDE937A12861FC59000CF588 /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +265,7 @@
 			children = (
 				FD3E9754283D0E410071FC05 /* iOS15WidgetKit */,
 				FD6358ED2840FE12006E3795 /* WidgetGroup */,
+				FDE937992861F958000CF588 /* ReminderWidget */,
 				FDE5EF5B283E60390014A6BA /* HelloWidget */,
 				FD6358E32840F1D7006E3795 /* DateTimeWidget */,
 				FD28130E28435222000B0FDE /* QuotesWidget */,
@@ -270,6 +288,8 @@
 		FD3E9754283D0E410071FC05 /* iOS15WidgetKit */ = {
 			isa = PBXGroup;
 			children = (
+				FDE9379A2861F9C8000CF588 /* iOS15WidgetKit.entitlements */,
+				FDE9379C2861FBD1000CF588 /* ReminderExample */,
 				FD2C1DD72860AC97004E2E48 /* RainExample */,
 				FD3E9755283D0E410071FC05 /* iOS15WidgetKitApp.swift */,
 				FD3E9757283D0E410071FC05 /* ContentView.swift */,
@@ -301,6 +321,7 @@
 		FD6358ED2840FE12006E3795 /* WidgetGroup */ = {
 			isa = PBXGroup;
 			children = (
+				FDE9379B2861FAFB000CF588 /* HelloWidgetExtension.entitlements */,
 				FD6358EE2840FE3F006E3795 /* MyWidgetsBundle.swift */,
 			);
 			path = WidgetGroup;
@@ -326,6 +347,43 @@
 				FDE5EF60283E603C0014A6BA /* Info.plist */,
 			);
 			path = HelloWidget;
+			sourceTree = "<group>";
+		};
+		FDE937992861F958000CF588 /* ReminderWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FD6219F22861FF9C00E32026 /* ReminderEntry.swift */,
+				FD6219F42861FFFA00E32026 /* ReminderTimelineProvider.swift */,
+				FD6219F6286200D100E32026 /* ReminderWidgetView.swift */,
+				FD6219F82862016600E32026 /* ReminderWidget.swift */,
+			);
+			path = ReminderWidget;
+			sourceTree = "<group>";
+		};
+		FDE9379C2861FBD1000CF588 /* ReminderExample */ = {
+			isa = PBXGroup;
+			children = (
+				FDE9379E2861FBE9000CF588 /* View */,
+				FDE9379D2861FBE6000CF588 /* Model */,
+				FD6219FA2862022F00E32026 /* AppContants.swift */,
+			);
+			path = ReminderExample;
+			sourceTree = "<group>";
+		};
+		FDE9379D2861FBE6000CF588 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDE9379F2861FC03000CF588 /* Reminder.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FDE9379E2861FBE9000CF588 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDE937A12861FC59000CF588 /* ReminderView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,8 +489,11 @@
 			files = (
 				FD2C1DDC2860ACD2004E2E48 /* Rain.swift in Sources */,
 				FD3E9758283D0E410071FC05 /* ContentView.swift in Sources */,
+				FDE937A22861FC59000CF588 /* ReminderView.swift in Sources */,
+				FD6219FB2862022F00E32026 /* AppContants.swift in Sources */,
 				FD2C1DDE2860ADA6004E2E48 /* RainView.swift in Sources */,
 				FD3E9756283D0E410071FC05 /* iOS15WidgetKitApp.swift in Sources */,
+				FDE937A02861FC03000CF588 /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,9 +506,11 @@
 				FD2C1DE22860B1AC004E2E48 /* RainEntry.swift in Sources */,
 				FD281319284356B2000B0FDE /* QuotesWidgetEntry.swift in Sources */,
 				FDE5EF6B283E66500014A6BA /* HelloWidgetTimelineProvider.swift in Sources */,
+				FD6219F52861FFFA00E32026 /* ReminderTimelineProvider.swift in Sources */,
 				FD310A54285DF07500E1BC6E /* Weather.swift in Sources */,
 				FD310A57285DF08100E1BC6E /* WeatherTimelineProvider.swift in Sources */,
 				FD2C1DDF2860B170004E2E48 /* RainView.swift in Sources */,
+				FD6219F92862016600E32026 /* ReminderWidget.swift in Sources */,
 				FD6358E82840F330006E3795 /* DateTimeEntry.swift in Sources */,
 				FD2C1DE62860B319004E2E48 /* RainWidget.swift in Sources */,
 				FD28131D28435A5F000B0FDE /* QuoteWidgetView.swift in Sources */,
@@ -459,7 +522,9 @@
 				FD2C1DE02860B174004E2E48 /* Rain.swift in Sources */,
 				FD310A55285DF07900E1BC6E /* WeatherService.swift in Sources */,
 				FD310A59285DF08800E1BC6E /* WeatherWidget.swift in Sources */,
+				FD6219FC2862022F00E32026 /* AppContants.swift in Sources */,
 				FD6358E72840F32A006E3795 /* DateTimeTimelineProvider.swift in Sources */,
+				FD6219F7286200D100E32026 /* ReminderWidgetView.swift in Sources */,
 				FD28131F28435B1A000B0FDE /* QuoteWidget.swift in Sources */,
 				FDE5EF69283E629C0014A6BA /* HelloWidgetEntry.swift in Sources */,
 				FDE5EF6D283E6F990014A6BA /* HelloWidgetView.swift in Sources */,
@@ -468,6 +533,7 @@
 				FD6358EA2840F7C2006E3795 /* DateTimeEntryView.swift in Sources */,
 				FD310A56285DF07D00E1BC6E /* WeatherEntry.swift in Sources */,
 				FD310A58285DF08500E1BC6E /* WeatherWidgetView.swift in Sources */,
+				FD6219F32861FF9C00E32026 /* ReminderEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +668,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOS15WidgetKit/iOS15WidgetKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS15WidgetKit/Preview Content\"";
@@ -632,6 +699,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOS15WidgetKit/iOS15WidgetKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS15WidgetKit/Preview Content\"";
@@ -661,6 +729,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HelloWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XP6V4T4UU6;
@@ -688,6 +757,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = HelloWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XP6V4T4UU6;

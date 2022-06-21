@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-      RainView(rainData: Rain.randomized)
+      // RainView(rainData: Rain.randomized)
+      ReminderView()
     }
 }
 
