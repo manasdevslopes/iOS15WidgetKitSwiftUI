@@ -32,6 +32,13 @@
 		FD3E9758283D0E410071FC05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3E9757283D0E410071FC05 /* ContentView.swift */; };
 		FD3E975A283D0E440071FC05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3E9759283D0E440071FC05 /* Assets.xcassets */; };
 		FD3E975D283D0E440071FC05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3E975C283D0E440071FC05 /* Preview Assets.xcassets */; };
+		FD5E73C628635D890097045A /* Expense.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FD5E73C528635D890097045A /* Expense.intentdefinition */; };
+		FD5E73C828635FE30097045A /* ExpenseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5E73C728635FE30097045A /* ExpenseCategory.swift */; };
+		FD5E73CA2863612A0097045A /* ExpenseEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5E73C92863612A0097045A /* ExpenseEntry.swift */; };
+		FD5E73CC286361810097045A /* ExpenseTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5E73CB286361810097045A /* ExpenseTimelineProvider.swift */; };
+		FD5E73CE286364880097045A /* ExpenseWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5E73CD286364880097045A /* ExpenseWidgetView.swift */; };
+		FD5E73D02863668F0097045A /* ExpenseWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5E73CF2863668F0097045A /* ExpenseWidget.swift */; };
+		FD5E73D1286368280097045A /* Expense.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FD5E73C528635D890097045A /* Expense.intentdefinition */; };
 		FD6219F32861FF9C00E32026 /* ReminderEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6219F22861FF9C00E32026 /* ReminderEntry.swift */; };
 		FD6219F52861FFFA00E32026 /* ReminderTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6219F42861FFFA00E32026 /* ReminderTimelineProvider.swift */; };
 		FD6219F7286200D100E32026 /* ReminderWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6219F6286200D100E32026 /* ReminderWidgetView.swift */; };
@@ -104,6 +111,12 @@
 		FD3E9757283D0E410071FC05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD3E9759283D0E440071FC05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD3E975C283D0E440071FC05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD5E73C528635D890097045A /* Expense.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Expense.intentdefinition; sourceTree = "<group>"; };
+		FD5E73C728635FE30097045A /* ExpenseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategory.swift; sourceTree = "<group>"; };
+		FD5E73C92863612A0097045A /* ExpenseEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEntry.swift; sourceTree = "<group>"; };
+		FD5E73CB286361810097045A /* ExpenseTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTimelineProvider.swift; sourceTree = "<group>"; };
+		FD5E73CD286364880097045A /* ExpenseWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseWidgetView.swift; sourceTree = "<group>"; };
+		FD5E73CF2863668F0097045A /* ExpenseWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseWidget.swift; sourceTree = "<group>"; };
 		FD6219F22861FF9C00E32026 /* ReminderEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderEntry.swift; sourceTree = "<group>"; };
 		FD6219F42861FFFA00E32026 /* ReminderTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTimelineProvider.swift; sourceTree = "<group>"; };
 		FD6219F6286200D100E32026 /* ReminderWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderWidgetView.swift; sourceTree = "<group>"; };
@@ -265,6 +278,7 @@
 			children = (
 				FD3E9754283D0E410071FC05 /* iOS15WidgetKit */,
 				FD6358ED2840FE12006E3795 /* WidgetGroup */,
+				FD5E73C428635CF50097045A /* ExpenseWidget */,
 				FDE937992861F958000CF588 /* ReminderWidget */,
 				FDE5EF5B283E60390014A6BA /* HelloWidget */,
 				FD6358E32840F1D7006E3795 /* DateTimeWidget */,
@@ -305,6 +319,19 @@
 				FD3E975C283D0E440071FC05 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD5E73C428635CF50097045A /* ExpenseWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FD5E73C528635D890097045A /* Expense.intentdefinition */,
+				FD5E73C728635FE30097045A /* ExpenseCategory.swift */,
+				FD5E73C92863612A0097045A /* ExpenseEntry.swift */,
+				FD5E73CB286361810097045A /* ExpenseTimelineProvider.swift */,
+				FD5E73CD286364880097045A /* ExpenseWidgetView.swift */,
+				FD5E73CF2863668F0097045A /* ExpenseWidget.swift */,
+			);
+			path = ExpenseWidget;
 			sourceTree = "<group>";
 		};
 		FD6358E32840F1D7006E3795 /* DateTimeWidget */ = {
@@ -488,6 +515,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD2C1DDC2860ACD2004E2E48 /* Rain.swift in Sources */,
+				FD5E73D1286368280097045A /* Expense.intentdefinition in Sources */,
 				FD3E9758283D0E410071FC05 /* ContentView.swift in Sources */,
 				FDE937A22861FC59000CF588 /* ReminderView.swift in Sources */,
 				FD6219FB2862022F00E32026 /* AppContants.swift in Sources */,
@@ -502,26 +530,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD6358EC2840FBF8006E3795 /* DateTimeWidget.swift in Sources */,
+				FD5E73CC286361810097045A /* ExpenseTimelineProvider.swift in Sources */,
 				FD28131B2843573A000B0FDE /* QuotesWidgetTimelineProvider.swift in Sources */,
 				FD2C1DE22860B1AC004E2E48 /* RainEntry.swift in Sources */,
 				FD281319284356B2000B0FDE /* QuotesWidgetEntry.swift in Sources */,
 				FDE5EF6B283E66500014A6BA /* HelloWidgetTimelineProvider.swift in Sources */,
 				FD6219F52861FFFA00E32026 /* ReminderTimelineProvider.swift in Sources */,
 				FD310A54285DF07500E1BC6E /* Weather.swift in Sources */,
+				FD5E73D02863668F0097045A /* ExpenseWidget.swift in Sources */,
+				FD5E73CA2863612A0097045A /* ExpenseEntry.swift in Sources */,
 				FD310A57285DF08100E1BC6E /* WeatherTimelineProvider.swift in Sources */,
 				FD2C1DDF2860B170004E2E48 /* RainView.swift in Sources */,
 				FD6219F92862016600E32026 /* ReminderWidget.swift in Sources */,
 				FD6358E82840F330006E3795 /* DateTimeEntry.swift in Sources */,
 				FD2C1DE62860B319004E2E48 /* RainWidget.swift in Sources */,
 				FD28131D28435A5F000B0FDE /* QuoteWidgetView.swift in Sources */,
+				FD5E73C828635FE30097045A /* ExpenseCategory.swift in Sources */,
 				FDE5EF5D283E60390014A6BA /* HelloWidget.swift in Sources */,
 				FD2C1DE42860B1DE004E2E48 /* RainTimelineProvider.swift in Sources */,
 				FD28131828435371000B0FDE /* QuoteService.swift in Sources */,
 				FD310A53285DF07200E1BC6E /* Date+Extensions.swift in Sources */,
 				FD6358EF2840FE3F006E3795 /* MyWidgetsBundle.swift in Sources */,
+				FD5E73CE286364880097045A /* ExpenseWidgetView.swift in Sources */,
 				FD2C1DE02860B174004E2E48 /* Rain.swift in Sources */,
 				FD310A55285DF07900E1BC6E /* WeatherService.swift in Sources */,
 				FD310A59285DF08800E1BC6E /* WeatherWidget.swift in Sources */,
+				FD5E73C628635D890097045A /* Expense.intentdefinition in Sources */,
 				FD6219FC2862022F00E32026 /* AppContants.swift in Sources */,
 				FD6358E72840F32A006E3795 /* DateTimeTimelineProvider.swift in Sources */,
 				FD6219F7286200D100E32026 /* ReminderWidgetView.swift in Sources */,

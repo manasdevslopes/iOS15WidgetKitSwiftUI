@@ -23,5 +23,6 @@ struct MySubWidgetBundle: WidgetBundle {
   var body: some Widget{
     RainWidget()
     ReminderWidget()
+    ExpenseWidget()
   }
 }
